@@ -1,3 +1,4 @@
 /youtubetospotify
-ipynb_checkpoints
 .DS_Store
+.cache
+.ipynb_checkpoints
