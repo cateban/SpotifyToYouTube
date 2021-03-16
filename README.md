@@ -24,7 +24,7 @@ Basically, the code does the following:
 - Authenticate to YouTube
   - For this, you will need to have a .json file with some credentials. You get this json file on the console of your application when you enable OAuth 2.0 authentication. (You need to get into the user in order to manage its playlists.)
 - Authenticate to Spotify
-  - You have to pass the client_id & client_secret that you get on Spotify's developer platform when you create your app. (Playlists should be public because we are not requiring user authentication).
+  - You have to pass the client_id & client_secret that you get on Spotify's developer platform when you create your app. (Playlists should be public because we are not requiring user authentication. Also, make sure that the redirect_uri="https://www.spotify.com/mx/home/" is on your apps whitelist in Spotify Developer Platform). 
 - Get all tracks of a given user & playlist_id and parse them into strings. 
 - Loop the strings you just made into the YouTube API to search and get the video id of the first result (hopefully, the first result will always be the best/official version of the song). 
 - Insert that video id into a playlist in YouTube.
